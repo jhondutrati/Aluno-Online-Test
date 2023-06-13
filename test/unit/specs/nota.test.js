@@ -68,3 +68,15 @@ class Nota {
 }
 
 module.exports = Nota;
+
+
+test('calcula conceito final corretamente', () => {
+  const nota = new Nota();
+  
+  expect(nota.mediaCA(9.5)).toBe('SS - Superior');
+  expect(nota.mediaCA(7.8)).toBe('MS - Médio Superior');
+  expect(nota.mediaCA(5.5)).toBe('MM - Médio');
+  expect(nota.mediaCA(3.2)).toBe('MI - Médio Inferior');
+  expect(nota.mediaCA(1.7)).toBe('II - Inferior');
+  expect(nota.mediaCA(0.0)).toBe('SR - Sem rendimento');
+});
