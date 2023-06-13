@@ -1,0 +1,2 @@
+o bug encontrado para falta e boleto foi devido a nao ter a pagina criada nem a rota no app.js
+a correção seria feita com a criação da pagina e adicionando a rota no app.js
