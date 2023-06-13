@@ -34,6 +34,4 @@ class Nota {
     }
 }
 
-
-
 module.exports = Nota;
